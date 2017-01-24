@@ -9,7 +9,7 @@
     "moduleResolution": "node",
     "noEmitOnError": true,
     "noImplicitAny": true,
-    "outDir": "../../dist/@angular/material",
+    "outDir": "../../dist/@my-company/my-library",
     "rootDir": ".",
     "sourceMap": true,
     "target": "es5",
@@ -24,7 +24,7 @@
     "system-config-spec.ts"
   ],
   "angularCompilerOptions": {
-    "genDir": "../../dist/@angular/material",
+    "genDir": "../../dist/@my-company/my-library",
     "skipTemplateCodegen": true,
     "debug": true
   }
