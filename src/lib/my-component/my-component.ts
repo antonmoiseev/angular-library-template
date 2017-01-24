@@ -1,6 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 
 @Component({
+    moduleId: module.id,
     selector: 'my-component',
     styleUrls: [ './my-component.css' ],
     templateUrl: './my-component.html'
