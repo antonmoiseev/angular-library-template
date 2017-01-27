@@ -8,16 +8,16 @@ set -e -o pipefail
 # Go to the project root directory
 cd $(dirname $0)/../..
 
-buildDir="dist/@angular/material"
-buildVersion=$(sed -nE 's/^\s*"version": "(.*?)",$/\1/p' package.json)
+buildDir="dist/@my-company/my-library"
+buildVersion=$(cat package.json | jq '.version' -r)
 
 commitSha=$(git rev-parse --short HEAD)
 commitAuthorName=$(git --no-pager show -s --format='%an' HEAD)
 commitAuthorEmail=$(git --no-pager show -s --format='%ae' HEAD)
 commitMessage=$(git log --oneline -n 1)
 
-repoName="material2-builds"
-repoUrl="https://github.com/angular/material2-builds.git"
+repoName="angular-library-template-builds"
+repoUrl="git@github.com:antonmoiseev/angular-library-template-builds.git"
 repoDir="tmp/$repoName"
 
 # Create a release of the current repository.

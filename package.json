@@ -1,12 +1,5 @@
 {
-  "name": "material2",
-  "description": "Material Design components for Angular 2",
-  "homepage": "https://github.com/angular/material2",
-  "bugs": "https://github.com/angular/material2/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/angular/material2.git"
-  },
+  "name": "@my-company/my-library",
   "scripts": {
     "build": "gulp build:components",
     "demo-app": "gulp serve:devapp",
@@ -19,8 +12,7 @@
     "docs": "gulp docs",
     "api": "gulp api"
   },
-  "version": "2.0.0-beta.1",
-  "license": "MIT",
+  "version": "1.0.0",
   "engines": {
     "node": ">= 5.4.1 < 7"
   },
